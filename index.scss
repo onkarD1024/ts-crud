@@ -1,3 +1,63 @@
-.heading {
-  color: red;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .od-add-todo__container {
+      display: flex;
+      justify-content: center;
+      form {
+        width: 100%;
+        text-align: center;
+      }
+      .od-btn__add-todo {
+        margin-left: 10px;
+      }
+    }
+    .od-todo__list {
+      display: none;
+    }
+  }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+input[type="text"] {
+  width: 94%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+button {
+  padding: 8px;
 }

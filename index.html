@@ -5,8 +5,38 @@
     <title>Page Title</title>
   </head>
   <body>
-    <h1 class="heading">This is a Heading sds</h1>
-    <p>This is a paragraph.</p>
+    <div class="container">
+      <div class="content">
+        <div class="od-add-todo__container">
+          <form>
+            <input
+              type="text"
+              placeholder="What's in your mind?"
+              id="todo-input"
+            />
+            <button
+              type="submit"
+              class="od-btn__add-todo"
+              onclick="addToDo(event)"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="od-todo__list">
+          <table>
+            <thead>
+              <tr>
+                <th>Todo</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="od-todo-table__body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="./index.js"></script>
 </html>
